@@ -1,0 +1,41 @@
+.App {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .status-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .status-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .status-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .status-dot.active {
+    background-color: green;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  hr{
+    border-color:#aaa;
+    box-sizing:border-box;
+    width:100%;  
+  }
+  
