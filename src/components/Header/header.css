@@ -138,7 +138,8 @@
     }
 
     .sidebar a{
-        float: left;
+        text-align:center;
+        float: none;
     }
     .sidebar button{
         float: left;
