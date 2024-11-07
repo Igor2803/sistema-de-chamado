@@ -24,7 +24,7 @@ export default function Header() {
 
            
             {/* Menu de Cadastro com submenu */}
-            <button className="dropdown">
+            <Link className="dropdown">
                 <span className="dropdown-toggle">
                     <FiUser color='#FFF' size={24} />
                     Cadastro
@@ -33,7 +33,7 @@ export default function Header() {
                     <Link to="/usuario">Usuários</Link>
                     <Link to="/customers">Clientes</Link>
                 </p>
-            </button>
+            </Link>
 
             <Link to="/profile">
                 <FiSettings color='#FFF' size={24} />

@@ -132,11 +132,15 @@
         height: auto;
         position: relative;
     }
+    
     div.content{
         margin-left: 0 ;
     }
 
     .sidebar a{
+        float: left;
+    }
+    .sidebar button{
         float: left;
     }
     .sidebar div{
@@ -152,6 +156,10 @@
 
 @media screen and (max-width:400px) {
     .sidebar a{
+        text-align:center;
+        float: none;
+    }
+    .sidebar button{
         text-align:center;
         float: none;
     }
