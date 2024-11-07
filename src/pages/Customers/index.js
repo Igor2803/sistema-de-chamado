@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import Header from "../../components/Header"
 import Title from "../../components/Title"
+import { useNavigate } from 'react-router-dom'
 
 import {FiUser} from 'react-icons/fi'
 
@@ -14,6 +15,7 @@ export default function Customers(){
     const [cnpj,setCnpj] = useState('')
     const [endereco,setEndereco] = useState('')
 
+    const navigate = useNavigate();
 
     async function handleRegister(e){
         e.preventDefault();
@@ -28,7 +30,8 @@ export default function Customers(){
                 setNome('')
                 setCnpj('')
                 setEndereco('')
-                toast.success("Cliente registrado!")   
+                toast.success("Cliente registrado!") 
+                navigate('/dashboard'); // Redirecionar após registro  
             })
             .catch((error) => {
              console.log(error);
@@ -81,6 +84,8 @@ export default function Customers(){
                             Salvar
                         </button>
                     </form>
+                    <br></br>
+                    <br></br>
                 </div>
             </div>
         </div>

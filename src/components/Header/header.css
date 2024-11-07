@@ -18,6 +18,8 @@
     height: 150px;
 }
 
+
+
 .sidebar div{
     padding-top: 30px;
 }
@@ -43,11 +45,28 @@
     align-items: center;
     transition: ease-in-out 0.4s;
 }
-.sidebar a svg{
+.sidebar button{
+    background: none;
+    width: 100%;
+    border: none;
+    display: block;
+    padding: 16px;
+    display: flex;
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+    flex-direction: row;
+    align-items: center;
+    transition: ease-in-out 0.4s;
+}
+.sidebar  svg{
     margin-right: 0.5rem;
 
 }
 .sidebar a:hover{
+    background-color: #121212;
+    color: #FFF;
+}
+.sidebar button:hover{
     background-color: #121212;
     color: #FFF;
 }
@@ -66,6 +85,45 @@
     object-fit: cover;
     filter: drop-shadow(4px 3px 6px #121212);
     -webkit-filter:drop-shadow(4px 3px 6px #121212) ;    
+}
+/* Estilos para o dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Ocultar o submenu inicialmente */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #181c2e;
+    min-width: 150px;
+    padding: 10px;
+    border-radius: 4px;
+    top: 15px; /* Ajuste a posição vertical conforme necessário */
+    left: 22%;
+    z-index: 1;
+}
+
+/* Estilos para os links no submenu */
+.dropdown-menu p {
+    color: #FFF;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Exibir o submenu ao passar o mouse */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Estilo para o link principal de Cadastro */
+.dropdown-toggle {
+    cursor: pointer;
+    color: #FFF;
+    display: flex;
+    align-items: center;
 }
 
 @media screen and ( max-width: 700px){

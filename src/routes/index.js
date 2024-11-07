@@ -9,6 +9,8 @@ import Customers from '../pages/Customers';
 import New from '../pages/New';
 import Service from '../pages/Service';
 import Teste from '../pages/teste';
+import Usuario from '../pages/usuario';
+
 
 function RouteApp(){
     return(
@@ -20,7 +22,9 @@ function RouteApp(){
             <Route path="/customers" element={<Private><Customers/></Private>}/>
             <Route path="/service" element={<Private><Service/></Private>}/>
             <Route path="/new" element={<Private><New/></Private>}/>
+            <Route path="/new/:id" element={<Private><New/></Private>}/>
             <Route path="/teste" element={<Private><Teste/></Private>}/>
+            <Route path="/usuario" element={<Private><Usuario/></Private>}/>
 
         </Routes>
     )

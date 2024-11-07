@@ -1,6 +1,5 @@
 import  { useState, useContext } from 'react'
 import './signin.css'
-import {Link} from 'react-router-dom'
 import logo from '../../assets/logo.png'
 import {AuthContext} from '../../contexts/auth'
 
@@ -28,11 +27,14 @@ export default function SignIn(){
 
             <form onSubmit={handleSignIn}>
                 <h1>Entrar</h1>
+                <h4>Projeto Integrador UNIVESP</h4>
+
                 <input type="text" placeholder="email@email.com"  value={email} onChange={ (e) => setEmail(e.target.value)}/>
                 <input type="password" placeholder="*****"  value={password} onChange={ (e) => setPassword(e.target.value)}/>
                 <button type="submit">{loadingAuth ? "Carregando..." : "Acessar"}</button>
             </form>
-                <Link to="/register">Criar uma conta</Link>
+               <br></br>
+               <br></br>
             </di>
         </div>
     )
